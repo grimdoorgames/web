@@ -6,14 +6,8 @@
     <title>Grimdoor Games</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Montserrat:wght@200;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/your-code.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <div id="loader">
@@ -22,16 +16,20 @@
 
     <header>
       <div class="announcement-bar">
-        <p> Sitio web en desarrollo - Contenido sujeto a cambios </p>
+        <p>Sitio web en desarrollo</p>
       </div>     
     </header>
 
     <nav class="navbar">
       <div class="logo">GRIMDOOR GAMES</div>
+      
       <div class="menu-toggle" id="mobile-menu">
-        <span></span><span></span><span></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <ul class="nav-links">
+
+      <ul class="nav-links" id="nav-list">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Universe</a></li>
         <li><a href="#philosophy">Vision</a></li>
@@ -42,43 +40,29 @@
 
     <section id="home" class="hero">
       <div class="glitch-wrapper">
-        <h1 class="glitch" data-text="UNVEIL THE DARKNESS">
-          UNVEIL THE DARKNESS
-        </h1>
+        <h1 class="glitch" data-text="UNVEIL THE DARKNESS">UNVEIL THE DARKNESS</h1>
       </div>
-      <p class="hero-sub">
-        Donde el terror psicológico encuentra su forma física.
-      </p>
+      <p class="hero-sub">Donde el terror psicológico encuentra su forma física.</p>
       <div class="scroll-indicator"></div>
     </section>
 
     <section id="projects" class="container">
       <h2 class="title-main">CURRENT PROJECTS</h2>
       <div class="project-showcase">
-        <div class="project-featured">
-          <div class="project-img-wrapper">
-            <img src="banner (2).jpg" alt="Project Abigail" />
-            <div class="status-tag">In Development</div>
-          </div>
-          <div class="project-content">
-            <h3>Project Abigail</h3>
-            <p>
-              Un survival horror asimétrico optimizado para dispositivos de alta
-              gama. Abigail no es solo un enemigo; es un sistema de IA que
-              aprende de tus patrones de movimiento y miedo.
-            </p>
-            <ul class="features-list">
-              <li>Real-time Dynamic Lighting</li>
-              <li>Adaptive Sound Engine</li>
-              <li>Multi-ending Narrative</li>
-            </ul>
-            <div class="cta-group">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.Yulix.TheAbigailProject&hl=es_AR"
-                class="btn-main"
-                >Google Play</a
-              >
-            </div>
+        <div class="project-img-wrapper">
+          <img src="banner (2).jpg" alt="Project Abigail" />
+          <div class="status-tag">In Development</div>
+        </div>
+        <div class="project-content">
+          <h3>Project Abigail</h3>
+          <p>Un survival horror asimétrico optimizado para dispositivos de alta gama. Abigail no es solo un enemigo; es un sistema de IA que aprende de tus patrones de movimiento y miedo.</p>
+          <ul class="features-list">
+            <li>Real-time Dynamic Lighting</li>
+            <li>Adaptive Sound Engine</li>
+            <li>Multi-ending Narrative</li>
+          </ul>
+          <div class="cta-group">
+            <a href="https://play.google.com/store/apps/details?id=com.Yulix.TheAbigailProject&hl=es_AR" class="btn-main">Google Play</a>
           </div>
         </div>
       </div>
@@ -87,35 +71,24 @@
     <section id="philosophy" class="philosophy">
       <div class="philosophy-grid">
         <div class="philo-card">
-          <i class="icon-eye"></i>
+          <i class="fas fa-eye"></i>
           <h4>Atmósfera Inmersiva</h4>
-          <p>
-            Priorizamos la tensión sobre el susto fácil. El sonido del silencio
-            es nuestra mejor herramienta.
-          </p>
+          <p>Priorizamos la tensión sobre el susto fácil. El sonido del silencio es nuestra mejor herramienta.</p>
         </div>
         <div class="philo-card">
-          <i class="icon-brain"></i>
+          <i class="fas fa-brain"></i>
           <h4>IA de Vanguardia</h4>
-          <p>
-            Nuestros enemigos no siguen rutas; te acechan basándose en tus
-            decisiones.
-          </p>
+          <p>Nuestros enemigos no siguen rutas; te acechan basándose en tus decisiones.</p>
         </div>
         <div class="philo-card">
-          <i class="icon-mobile"></i>
+          <i class="fas fa-mobile-alt"></i>
           <h4>Mobile Mastery</h4>
-          <p>
-            Llevamos la potencia de PC a la palma de tu mano sin comprometer
-            visuales.
-          </p>
+          <p>Llevamos la potencia de PC a la palma de tu mano sin comprometer visuales.</p>
         </div>
         <div class="philo-card">
+          <i class="fas fa-atom"></i>
           <h4>Grim-Physics <span class="v-number">v2.0</span></h4>
-          <p>
-            Nuestro CPE (Custom Physics Engine) procesa las fuerzas
-            gravitatorias de forma independiente al framerate.
-          </p> 
+          <p>Nuestro CPE (Custom Physics Engine) procesa fuerzas gravitatorias de forma independiente.</p> 
         </div>
       </div>
     </section>
@@ -125,15 +98,11 @@
       <div class="timeline">
         <div class="timeline-item">
           <div class="date">Q4 2025</div>
-          <div class="content">
-            Alpha Testing de "Project Abigail" - Mecánicas de sigilo pulidas.
-          </div>
+          <div class="content">Alpha Testing de "Project Abigail" - Mecánicas de sigilo pulidas.</div>
         </div>
         <div class="timeline-item active">
           <div class="date">Q1 2026</div>
-          <div class="content">
-            Integración de AdMob & Sistemas de Recompensa (Revive System).
-          </div>
+          <div class="content">Integración de AdMob & Sistemas de Recompensa (Revive System).</div>
         </div>
         <div class="timeline-item">
           <div class="date">Q2 2026</div>
